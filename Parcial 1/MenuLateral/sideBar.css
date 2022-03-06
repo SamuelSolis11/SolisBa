@@ -65,4 +65,13 @@
       float: none;
       text-align: center;
     }
+
+    /* Selecciona un elemento con una ID que coincida con el fragmento de la URL actual */
+:target {
+  border: 2px solid black;
+}
+p:target {
+  background-color: gold;
+}
+
   }
