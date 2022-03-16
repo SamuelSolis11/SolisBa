@@ -9,6 +9,8 @@ La propiedad de display flex, ayuda a colocar las cajas como si fueran celdas de
 
 Para los diseñadores es la mejor solución, la caja padre contiene cajas que se pueden colocar en cualquier direccción y tienen dimensiones flexibles, se adpatan al espacio visible, con flex nos olvidamos de float y clear.
 El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación.
+
+
 ![](https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/31458/images/ynBifd7QM64krev4brgO_flex_terms.png)
 
 - Contenedor: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. Observa que al contrario que muchas otras estructuras CSS, por norma general, en Flex establecemos las propiedades al elemento padre.
