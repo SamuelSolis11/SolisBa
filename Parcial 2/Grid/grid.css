@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contenedor{ 
+    width: 100vw;
+    height: 100vh;
+    background-color:red ;
+     display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+    align-content: center;
+
+   /* justify-items: center;
+    align-items: center;*/
+}
+
+.caja{
+    background-color :yellow;
+    /*width: 130px;
+    height: 130px;
+    margin: 10px;*/
+    text-align: center;
+    border: 1px solid black;
+}
+
+#caja4{
+    
+    /*grid-column-start:1;
+    grid-column-end: 3;*/
+
+    grid-column: 1/ span 3;
+}
