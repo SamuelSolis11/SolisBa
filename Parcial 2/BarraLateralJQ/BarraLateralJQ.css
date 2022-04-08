@@ -1,0 +1,71 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    position: fixed;
+    background-color: lightblue;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  a:hover {
+    background-color: red;
+    color:  black;
+  }
+  
+  
+  .content {
+    background-color: orange;
+    margin-left: 200px ;
+    padding: 1px 16px;
+    height: 1500px ;
+  }
+  
+  .contenidoOpcion { display: none; }
+
+  #nom:target,
+  #Esc:target,
+  #Car:target,
+  #Mat:target { display: block;}
+
+  .MenuEscondido{
+    display:  none;
+  }
+  .ContenidoMargenCero{
+    margin-left:  0px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    div.sidebar {
+      float:none;
+      width: 100%;
+      height: auto;
+    }
+  
+   
+    .sidebar a {float: left;}
+  
+
+    div.content {margin-left: 0;
+     width:100%;}
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sidebar a {
+      float: none;
+      text-align: center;
+    }
+  }
+
+ 
