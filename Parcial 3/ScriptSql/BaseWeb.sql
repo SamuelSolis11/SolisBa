@@ -1,7 +1,7 @@
 CREATE DATABASE L19100257;
 use L19100257;
 
-DROP TABLE IF EXISTS `Jugador`;
+
 CREATE TABLE `Jugador` (
   `ID_Jugador`   smallint  primary KEY  NULL AUTO_INCREMENT,
   `Nombre` varchar(50) DEFAULT NULL,
