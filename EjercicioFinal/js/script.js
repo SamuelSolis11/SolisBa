@@ -2,21 +2,23 @@ $(document).ready(function() {
 
 //Consulta base de datos // 
 $('#btnConsultarBD').click(function() {
-    let paridCte = prompt("Teclee el ID a consultar");
-
-    $.post('./php/conectar.php',{par1:paridCte},function(data){
-        refrescar(data);
-    },'json');
+    $('#modal1').modal();
+    $('#modal1').on('hidden.bs.modal',function(e){
+        let paridCte=$('#idConsulta').val();
+        $.post('./php/conectar.php',{par1:paridCte},function(data){
+            refrescar(data);
+        },'json');
+    })
 });
 
 $('#btnBorrarBD').click(function() {
-    let paridCte = prompt("Teclee el ID a borrar")
-    $.post('./php/Borrar.php',{par1:paridCte});
-    Swal.fire(
-        'Accion' , 
-         'Usuario eliminado' , 
-         'success', 
-        );
+    $('#modal2').modal();
+    $('#modal2').on('hidden.bs.modal',function(e){
+        let paridCte=$('#idBorrar').val();
+        $.post('./php/Borrar.php',{par1:paridCte},function(data){
+            refrescar(data);
+        },'json');
+    })
 });
 
 $('#btnInsertarBD').click(function() {
