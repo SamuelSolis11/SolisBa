@@ -12,13 +12,17 @@ $('#btnConsultarBD').click(function() {
 });
 
 $('#btnBorrarBD').click(function() {
-    $('#modal2').modal();
-    $('#modal2').on('hidden.bs.modal',function(e){
-        let paridCte=$('#idBorrar').val();
+        let paridCte=$('#id_jugador').val();
         $.post('./php/Borrar.php',{par1:paridCte},function(data){
             refrescar(data);
         },'json');
-    })
+
+        Swal.fire(
+            'Accion' , 
+             'Usuario Eliminado' , 
+             'success', 
+            );
+    
 });
 
 $('#btnInsertarBD').click(function() {
@@ -55,7 +59,7 @@ function refrescar(objeto){
 }
 
 $('#btnModificarBD').click(function() {
-    let paridCte=prompt("Teclee el ID a modificar");
+    let paridCte=$('#id_jugador').val();
     let nombre = $('#nombre').val();
     let Fecha =  $('#fecha').val();
     let Nacionalidad = $('#nacionalidad').val();
